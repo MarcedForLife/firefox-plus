@@ -16,8 +16,6 @@ user_pref("layout.spellcheckDefault", 0);
 user_pref("app.update.auto", false);
 // disable background service to install updates
 user_pref("app.update.service.enabled", false);
-// open tabs to the right of the current tab
-user_pref("browser.tabs.insertAfterCurrent", true);
 // enable dark-mode
 user_pref("browser.in-content.dark-mode", true);
 user_pref("ui.systemUsesDarkTheme", 1);
@@ -25,8 +23,8 @@ user_pref("ui.systemUsesDarkTheme", 1);
 user_pref("browser.startup.page", 3);
 // disable data collection & crash reports
 user_pref("datareporting.healthreport.uploadEnabled", false);
-// disable WebRTC leaks
-user_pref("media.peerconnection.enabled", false);
+// Originally disabled due to WebRTC leaks, but enabled for Google Meet
+user_pref("media.peerconnection.enabled", true);
 // allow search sugggestions in private windows
 user_pref("browser.search.suggest.enabled.private", true);
 // Disables geolocation and firefox logging geolocation requests.
