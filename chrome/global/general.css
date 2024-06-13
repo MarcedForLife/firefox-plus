@@ -850,3 +850,11 @@ menuitem[checked="true"]>.menu-iconic-left,
       box-shadow: none !important
     }
   }
+
+/* Custom, sourced from: https://support.mozilla.org/ig/questions/1372399 */
+.browserContainer > findbar {
+  -moz-box-ordinal-group:0 !important; /*  for 112 and older */
+  order: -1 !important; /* for 113 and newer */
+  border-top: none !important;
+  border-bottom: 1px solid ThreeDShadow !important;
+}
