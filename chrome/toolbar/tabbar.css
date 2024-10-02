@@ -119,6 +119,7 @@
 #TabsToolbar #TabsToolbar-customization-target > .toolbarbutton-1 {
 	margin-top: var(--tab-block-margin) !important;
 }
+/* Disabled as I prefer the larger tab toolbar size
 #main-window[sizemode="maximized"] #tabbrowser-tabs,
 #main-window[sizemode="maximized"] #TabsToolbar #TabsToolbar-customization-target > .toolbarbutton-1 {
     margin-top: 0 !important;
