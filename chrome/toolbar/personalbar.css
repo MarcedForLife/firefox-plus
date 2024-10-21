@@ -75,7 +75,8 @@ toolbarbutton.bookmark-item[open="true"] > .toolbarbutton-icon{
 @media (-moz-bool-pref: "fp.tweak.autohide-bookmarks") {
 #PersonalToolbar{
   --bookmarks-padding: 4px;
-  --autohide-toolbar-delay: 600ms;
+  --autohide-toolbar-show-delay: 100ms;
+  --autohide-toolbar-hide-delay: 400ms;
   --autohide-toolbar-focus-rotation: 0deg;
   --autohide-toolbar-hover-rotation: 0deg;
 }
@@ -88,7 +89,7 @@ toolbarbutton.bookmark-item[open="true"] > .toolbarbutton-icon{
   margin-bottom: -34px;
   transform: rotateX(90deg);
   transform-origin: top;
-  transition: transform 135ms linear var(--autohide-toolbar-delay) !important;
+  transition: transform 135ms linear var(--autohide-toolbar-hide-delay) !important;
   z-index: 1;
   height: 34px;
 }
@@ -121,7 +122,7 @@ toolbarbutton.bookmark-item[open="true"] > .toolbarbutton-icon{
 }
 #navigator-toolbox:hover >  #PersonalToolbar
 {
-  transition-delay: 800ms !important;
+  transition-delay: var(--autohide-toolbar-show-delay) !important;
   transform: rotateX(var(--autohide-toolbar-hover-rotation,0)) !important;
 }
 
